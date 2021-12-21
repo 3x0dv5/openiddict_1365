@@ -1,0 +1,12 @@
+﻿@page "/"
+<h5>Claims summary</h5>
+<ShowClaims></ShowClaims>
+
+<h5>Client side check</h5>
+<HasClaim ClaimSide="ClaimSide.Client" ClaimType="ENTITY_TYPE_1" ClaimValue="VIEW" Expected="true"></HasClaim>
+<HasClaim ClaimSide="ClaimSide.Client" ClaimType="ENTITY_TYPE_2" ClaimValue="VIEW" Expected="true"></HasClaim>
+
+<h5>Server side check</h5>
+<HasClaim ClaimSide="ClaimSide.Server" ClaimType="ENTITY_TYPE_1" ClaimValue="VIEW" Expected="true"></HasClaim>
+<HasClaim ClaimSide="ClaimSide.Server" ClaimType="ENTITY_TYPE_2" ClaimValue="VIEW" Expected="true"></HasClaim>
+<HasClaim ClaimSide="ClaimSide.Server" ClaimType="ENTITY_TYPE_3" ClaimValue="XXXX" Expected="false"></HasClaim>
